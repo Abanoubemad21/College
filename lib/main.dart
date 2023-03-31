@@ -24,12 +24,25 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 40, 35, 68),
-        title: Text("First Application"),
+        backgroundColor: Color.fromARGB(255, 59, 166, 94),
+        title: const Text("Birthday Card"),
       ),
-      body: const Center(
-        child: Text(
-          'Abanoub Emad Zaki',
+      body: SizedBox(
+        width: double.infinity,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              "assets/imgs/1.jpeg",
+              fit: BoxFit.cover,
+              width: double.infinity,
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              'Happy Birthday !!',
+              style: TextStyle(fontSize: 30),
+            ),
+          ],
         ),
       ),
       // floatingActionButton: FloatingActionButton(
